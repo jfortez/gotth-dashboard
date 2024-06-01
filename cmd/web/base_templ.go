@@ -23,7 +23,7 @@ func Base() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Go Blueprint Hello</title><script src=\"assets/js/htmx.min.js\"></script></head><body><main>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Go Blueprint Hello</title><script src=\"assets/js/htmx.min.js\"></script><link rel=\"stylesheet\" href=\"assets/css/app.css\"></head><body><main class=\"container mx-auto bg-slate-50  dark:bg-slate-800\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
