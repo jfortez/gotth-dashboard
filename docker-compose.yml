@@ -30,7 +30,7 @@ services:
       DB_USERNAME: ${DB_USERNAME}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_PORT: ${DB_PORT}
-      DB_HOST: ${DB_HOST}
+      DB_HOST: db
     depends_on:
       db:
         condition: service_healthy
