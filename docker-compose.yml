@@ -16,6 +16,7 @@ services:
       interval: 3s
       timeout: 3s
       retries: 5
+    restart: always
 
   app:
     build:
@@ -33,3 +34,4 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    restart: always
