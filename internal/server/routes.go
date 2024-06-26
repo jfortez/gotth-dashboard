@@ -5,8 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/a-h/templ"
 	"gochi/cmd/web"
+
+	"github.com/a-h/templ"
 )
 
 func (s *Server) RegisterRoutes() http.Handler {
