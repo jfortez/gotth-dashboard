@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS users
     id serial PRIMARY KEY,
     name text NOT NULL,
     email text NOT NULL,
-    password text NOT NULL
+    password text NOT NULL,
     created_at timestamp NOT NULL DEFAULT NOW(),
     updated_at timestamp NOT NULL DEFAULT NOW()
 );
