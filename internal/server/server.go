@@ -7,8 +7,6 @@ import (
 	"strconv"
 	"time"
 
-	_ "github.com/joho/godotenv/autoload"
-
 	"gochi/internal/database"
 )
 
@@ -19,7 +17,7 @@ type Server struct {
 }
 
 func NewServer() *http.Server {
-	port, _ := strconv.Atoi(os.Getenv("PORT"))
+	port, _ := strconv.Atoi(os.Getenv("APP_PORT"))
 	NewServer := &Server{
 		port: port,
 
